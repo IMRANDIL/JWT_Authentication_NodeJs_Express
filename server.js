@@ -6,7 +6,7 @@ const router = require('./router/router')
 //MIDDLEWARE....
 
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true }))
 app.use('/', router);
 
 
