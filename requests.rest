@@ -1,5 +1,26 @@
 GET http://localhost:5000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW1yYW4iLCJpYXQiOjE2NDMxNzg1MDksImV4cCI6MTY0MzE3ODUyNH0.bJDbSRdsIHsAg-tyAN1raJAt8VuBnu8dq8-dOz8StYw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW1yYW4iLCJpYXQiOjE2NDMxODA2NDgsImV4cCI6MTY0MzE4MDY5M30.9XdQMKIv_VR_ypPtLyEcdEV7xYQmVofXkZwTnyZTXkA
+
+###
+
+
+DELETE http://localhost:7000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW1yYW4iLCJpYXQiOjE2NDMxODEzNDd9.b2O6mrp0Ad6nNhIPzNtmjHEW4Z3O-FkGm_MslEiahxc"
+}
+
+
+
+###
+
+POST http://localhost:7000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSW1yYW4iLCJpYXQiOjE2NDMxODEzNDd9.b2O6mrp0Ad6nNhIPzNtmjHEW4Z3O-FkGm_MslEiahxc"
+}
 
 ###
 
