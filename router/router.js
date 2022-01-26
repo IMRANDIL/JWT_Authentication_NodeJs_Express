@@ -12,7 +12,7 @@ router.get('/posts', authenticateToken, (req, res) => {
 
 
 
-//login route....
+
 
 
 //middleware....
@@ -41,18 +41,6 @@ function authenticateToken(req, res, next) {
 
 
 
-router.post('/login', (req, res) => {
-    //Authenticate User....
-
-    const userName = req.body.userName;
-    const user = { name: userName }
-
-    const access_token = jwt.sign(user, process.env.ACCESS_TOKEN);
-
-
-    res.json({ accessToken: access_token })
-
-})
 
 
 

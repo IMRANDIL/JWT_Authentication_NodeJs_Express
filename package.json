@@ -2,9 +2,10 @@
   "name": "jwt_authentication_nodejs_express",
   "version": "1.0.0",
   "description": "Authentication JWT Nodejs",
-  "main": "server.js",
+  "main": "authServer.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon authServer.js",
+    "devstart": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
